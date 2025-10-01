@@ -5039,6 +5039,7 @@ GameObject:
   - component: {fileID: 4476505260342401058}
   - component: {fileID: 7687451593862865243}
   - component: {fileID: 7711904985129178291}
+  - component: {fileID: -544053026425030817}
   m_Layer: 0
   m_Name: Dog_RhodesianRidgeback_01
   m_TagString: Untagged
@@ -5133,6 +5134,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveFoward
   speed: 7
+--- !u!114 &-544053026425030817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845950438971104517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bfa72c6789a940b1aa284d69f1830b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!1 &7867503430517898707
 GameObject:
   m_ObjectHideFlags: 0
