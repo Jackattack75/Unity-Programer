@@ -2076,6 +2076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8265705944294037858}
   - component: {fileID: 6897027359556458112}
+  - component: {fileID: 2315681423473723436}
   m_Layer: 0
   m_Name: SM_RhodesianRidgeback_01
   m_TagString: Untagged
@@ -2202,6 +2203,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: -0.034129087, z: 0.08888093}
     m_Extent: {x: 0.05240287, y: 0.09925, z: 0.13395646}
   m_DirtyAABB: 0
+--- !u!65 &2315681423473723436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3717150512397546306}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.10480573, y: 0.19850002, z: 0.26791292}
+  m_Center: {x: 0, y: 0.09925, z: -0.0030096471}
 --- !u!1 &3782512475142989766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5040,6 +5062,8 @@ GameObject:
   - component: {fileID: 7687451593862865243}
   - component: {fileID: 7711904985129178291}
   - component: {fileID: -544053026425030817}
+  - component: {fileID: -6725151467942025868}
+  - component: {fileID: 1219812797910043098}
   m_Layer: 0
   m_Name: Dog_RhodesianRidgeback_01
   m_TagString: Untagged
@@ -5146,6 +5170,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bfa72c6789a940b1aa284d69f1830b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &-6725151467942025868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845950438971104517}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.10743537, y: 0.19997399, z: 0.2644974}
+  m_Center: {x: 0.0015338659, y: 0.09984454, z: 0.027632821}
+--- !u!114 &1219812797910043098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845950438971104517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ef0330052954bb98ccd3796d979193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &7867503430517898707
 GameObject:
   m_ObjectHideFlags: 0

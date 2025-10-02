@@ -101,6 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530313974271916817}
   - component: {fileID: 3900181532355969857}
+  - component: {fileID: 1938707352728781915}
   m_Layer: 0
   m_Name: SM_Stag_01
   m_TagString: Untagged
@@ -182,6 +183,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000000014901161, y: 0.0357289, z: 0.11530784}
     m_Extent: {x: 0.062572636, y: 0.22771719, z: 0.19990173}
   m_DirtyAABB: 0
+--- !u!65 &1938707352728781915
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992077078947741594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12514527, y: 0.45543438, z: 0.3998035}
+  m_Center: {x: 0.000000014901161, y: 0.0357289, z: 0.115307845}
 --- !u!1 &1747612546900566212
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +853,8 @@ GameObject:
   - component: {fileID: 4035092853489021401}
   - component: {fileID: 3751188764872550111}
   - component: {fileID: -4494143735481337442}
+  - component: {fileID: -8993430430806629438}
+  - component: {fileID: -6856997065785067465}
   m_Layer: 0
   m_Name: Animal_Stag_01
   m_TagString: Untagged
@@ -910,6 +934,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bfa72c6789a940b1aa284d69f1830b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &-8993430430806629438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8067692755887520101}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.16643879, y: 0.44064653, z: 0.38552207}
+  m_Center: {x: 0.0011807084, y: 0.25491667, z: 0.05123013}
+--- !u!114 &-6856997065785067465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8067692755887520101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ef0330052954bb98ccd3796d979193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &8714906308729679521
 GameObject:
   m_ObjectHideFlags: 0
