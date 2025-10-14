@@ -259,6 +259,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: 7b6675de545141649953fd8adec4561b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400046, guid: 7b6675de545141649953fd8adec4561b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.5336995
       objectReference: {fileID: 0}
@@ -336,8 +340,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5092468, y: 3.4779584, z: 1}
-  m_Center: {x: -0.021413863, y: 1.2389797, z: 8.226474e-17}
+  m_Size: {x: 1.5092468, y: 2.9776692, z: 1}
+  m_Center: {x: -0.021413863, y: 1.4891243, z: 8.226474e-17}
 --- !u!54 &273056246
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -377,6 +381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc585061d1f5ac04a9a4668cf1ead6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  jumpForce: 10
+  gravityModifier: 1
+  isOnGround: 1
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
