@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public bool isOnGround = true;
     public bool gameOver = false;
     private Animator playerAnim;
+    public ParticleSystem explosionParticle;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
+            explosionParticle.Play();
             gameOver = true;
             Debug.Log("Game Over!");
             playerAnim.SetBool("Death_b", true);
