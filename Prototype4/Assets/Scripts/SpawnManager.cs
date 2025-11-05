@@ -4,6 +4,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
     private float spawnRange = 9;
+    public int enemyCount;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,7 +16,11 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
 
-
+        enemyCount = FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;
+        if(enemyCount == 0 )
+        {
+            SpawnEnemyWave(1);
+        }
 
     }
 
