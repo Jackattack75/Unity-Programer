@@ -2,7 +2,7 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> targets;
@@ -49,4 +49,8 @@ public class GameManager : MonoBehaviour
         isGameActive = false;
     }
 
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
