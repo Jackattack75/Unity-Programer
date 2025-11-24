@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI gameOverText;
     public bool isGameActive;
     public Button restartButton;
+    public GameObject titleScreen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -60,5 +61,6 @@ public class GameManager : MonoBehaviour
         score = 0;
         UpdateScore(0);
         isGameActive = true;
+        titleScreen.gameObject.SetActive(false);
     }
 }
